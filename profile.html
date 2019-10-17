@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="stylesheet" href="css/user.css">
+        <link rel="stylesheet" href="index2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/user.js"></script>
+    </head>        
+    
+    <body>
+        <div class="container-self">
+                <div id="top-left">
+                        <hr id="hr-left-1" style="width: 20vw;">
+                        <p>Enjoy hassle-free stall booking at the biggest flea markets of India with Fleaazar</p>
+                        <hr id="hr-left-2" style="width: 20vw; margin-top:0px;">
+                    </div>
+                    <div id="top-right">
+                        <hr id="hr-right-1" style="width: 20vw;">
+                        <p>Service covers fleamarkets in Delhi, Mumbai and Jaipur</p>
+                        <hr id="hr-right-2" style="width: 20vw; margin-top:20px;">
+                    </div>
+                    <div class="top-nav">
+                        <img id="logo" src="assets/img/logo.png">
+                        <ul class="navlist">           
+                            <li id="about">About Us</li>         
+                            <li id="events">Events</li>
+                            <li id="contact">Contact Us</li>
+                            <li>
+                                    <div class="dropdown">
+                                            <button class="dropbtn">My Account 
+                                              <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <div class="dropdown-content">
+                                                <a onclick="home()">Home</a>
+                                                <a onclick="trans()">Transactions</a>
+                                                <a onclick="profile()">Edit Profile</a>
+                                                <a href="#">Sign Out</a>
+                                            </div>
+                                          </div> 
+                            </li>
+                        </ul>   
+                    </div>
+        
+               
+
+        <div class="container">
+            <h1>Edit Profile</h1>
+              <hr>
+            <div class="row">
+              <!-- left column -->
+              <div class="col-md-3">
+                <div class="text-center">
+                  <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                  <h6>Upload a different photo...</h6>
+                  
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+              
+              <!-- edit form column -->
+              <div class="col-md-9 personal-info">
+                <div class="alert alert-info alert-dismissable">
+                  <a class="panel-close close" data-dismiss="alert">×</a> 
+                  <i class="fa fa-coffee"></i>
+                  This is an <strong>.alert</strong>. Use this to show important messages to the user.
+                </div>
+                <h3>Personal info</h3>
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">First name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="Jane">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Last name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="Bishop">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Company:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="janesemail@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Time Zone:</label>
+                    <div class="col-lg-8">
+                      <div class="ui-select">
+                        <select id="user_time_zone" class="form-control">
+                          <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                          <option value="Alaska">(GMT-09:00) Alaska</option>
+                          <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                          <option value="Arizona">(GMT-07:00) Arizona</option>
+                          <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                          <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                          <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                          <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Username:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" type="text" value="janeuser">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Password:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" type="password" value="11111122333">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Confirm password:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" type="password" value="11111122333">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                      <input type="button" class="btn btn-primary" value="Save Changes">
+                      <span></span>
+                      <input type="reset" class="btn btn-default" value="Cancel">
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        <hr>
+
+
+
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,215 @@
+a:hover{
+    cursor:pointer;
+}
+.top-nav{
+    position: absoulte;
+    width: 51%;
+    display: flex;
+    /* grid-template-columns: 3; */
+    flex-direction: column;
+}
+.top-nav ul{
+    width:67%;
+    margin-left:62%;
+    margin-top:45px;
+    display: flex;
+    flex-direction: row;
+    background-color: #bfdbe3;
+    border-radius: 15px;
+}
+ul li{
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.3vw;    
+}
+ul li:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+.top-nav img{
+    margin-left:84%;
+    margin-top:50px;
+    height: 180px;
+    width: 250px;
+}
+
+#top-left{
+    position: absolute;
+    left: 10vw;
+    top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    color: rgb(200,100,100);
+}
+#top-left p{
+    width: 20vw;
+}
+
+#top-right{
+    position: absolute;
+    right:10vw;
+    top:100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    color: rgb(200,100,100);
+}
+#top-right p{
+    right:10vw;
+    width:20vw;
+}
+
+.dropdown {
+    float: left;
+    margin-left:-26px;
+    overflow: hidden;
+    height: 100x;
+    text-align: center;
+  }
+  
+  .dropdown .dropbtn {    
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size:1.2vw;
+  }
+  
+  .dropdown-content {  
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+    height: fit-content;
+    background-color: rgb(220,220,220);
+  }
+  
+  .dropdown-content a {
+    padding-top:30px;
+    width:9vw;
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(180,180,180);
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Transactions */
+ 
+  #transaction-cont{
+      display: none;
+  }
+  table.transaction{
+      width:80%;
+      margin-left:10%;
+      margin-top:50px;
+  }
+  table.transaction td{
+      position: relative;
+      padding: 12px;
+      vertical-align: center;
+  }
+  table.transaction caption{
+      background-color: aqua;
+      padding-top: .7em;
+      padding-top:.7em;
+      letter-spacing: .085em;
+      width:85%;
+  }
+  table.transaction a { 
+    color: rgb(3,95,123); 
+    text-decoration: underline; 
+}
+table.transaction a:hover { 
+    text-decoration: none; 
+}
+
+#profile{
+    display:none;
+}
+
+table.profile{
+    width:80%;
+    margin-left:10%;
+    margin-top:50px;
+    border: 1px solid black;
+}
+ #head{
+    background-color: #bfdbe3;
+}
+
+table.profile td{
+    position: relative;
+    padding: 12px;
+    vertical-align: center;
+    background-color: #e0dab4;
+}
+/* table.profile caption{
+    background-color: aqua;
+    padding-top: .7em;
+    padding-top:.7em;
+    letter-spacing: .085em;
+    width:85%;
+} */
+table.profile a { 
+  color: rgb(3,95,123); 
+  text-decoration: underline; 
+}
+table.profile a:hover { 
+  text-decoration: none; 
+}
+
+.profile input{
+    height:35px;
+    font-size: 20px;
+    background-color: #e3e3e3;
+}
+#profile button{
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    margin-left:48%;
+}
+@media screen and (orientation: portrait){
+    .dropdown-content{
+        width: 210px;
+        margin-left:0px;
+    }
+    #events-table{
+        width:100%;
+        margin-left:5%;
+        font-size:2.5vw;
+        font-weight: 300;
+    }
+    table.transaction{
+        width:96%;
+        margin-left:2%;
+        font-size: 2.7vw;
+    }
+    table.profile{
+        width: 100px;
+        font-size: 2.7vw;
+        margin-left:5%;
+    }
+    #profile button{
+        font-size:4vw;
+    }
+    .profile input{
+        font-size: 2.5vw;
+    }
+}

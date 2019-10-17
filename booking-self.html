@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/booking.css">
+        <link rel="stylesheet" href="css/user.css">
+        <script type="javascript" src="booking.js"></script>
+        <link rel="stylesheet" href="index2.css">        
+    </head>
+    
+    <body>
+        <div class="container">
+
+            <div id="top-left">
+                <hr id="hr-left-1" style="width: 20vw;">
+                <p>Enjoy hassle-free stall booking at the biggest flea markets of India with Fleaazar</p>
+                <hr id="hr-left-2" style="width: 20vw; margin-top:0px;">
+            </div>
+            <div id="top-right">
+                <hr id="hr-right-1" style="width: 20vw;">
+                <p>Service covers fleamarkets in Delhi, Mumbai and Jaipur</p>
+                <hr id="hr-right-2" style="width: 20vw; margin-top:20px;">
+            </div>
+            <div class="top-nav">
+                <img id="logo" src="assets/img/logo.png">
+                <ul class="navlist">           
+                    <a href="#about-content" style="text-decoration: none; color:black"><li id="about">About Us</li></a>        
+                    <li id="events">Events</li>
+                    <li id="contact">Contact Us</li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">My Account 
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="user.html">Home</a>
+                                <a href="#" onclick="trans()">Transactions</a>
+                                <a href="#" onclick="profile()">Edit Profile</a>
+                                <a href="#">Sign Out</a>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>   
+            </div>
+        
+            <hr><hr>        
+
+        <header>
+            Book Your Stall
+        </header>
+        <div class="container-book">
+            <div class="Seat">
+                <form id="base-form">
+                   
+                    <div class="row">
+                        <h1>Lane 1</h1>
+                        <hr style="width:100%">
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-1" type="checkbox">
+                            <span class="checkmark">A1</span>
+                        </label>    
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-2" type="checkbox">
+                            <span class="checkmark">A2</span>
+                        </label>
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-3" type="checkbox">
+                            <span class="checkmark">A3</span>
+                        </label>
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-4" type="checkbox">
+                            <span class="checkmark">A4</span>
+                        </label>
+                        <label class="cont">  
+                            <input onclick="count(event)" id="1-5" type="checkbox">
+                            <span class="checkmark">A5</span>
+                        </label>
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-6" type="checkbox">
+                            <span class="checkmark">A6</span>
+                        </label>
+                        <label class="cont"> 
+                            <input onclick="count(event)" id="1-7" type="checkbox">
+                            <span class="checkmark">A7</span>
+                        </label>       
+                    </div>
+                    
+                    <div class="row">
+                            <h1>Lane 2</h1>
+                            <hr style="width:100%">
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-1" type="checkbox">
+                                <span class="checkmark">B1</span>
+                            </label>    
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-2" type="checkbox">
+                                <span class="checkmark">B2</span>
+                            </label>
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-3" type="checkbox">
+                                <span class="checkmark">B3</span>
+                            </label>
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-4" type="checkbox">
+                                <span class="checkmark">B4</span>
+                            </label>
+                            <label class="cont">  
+                                <input onclick="count(event)" id="2-5" type="checkbox">
+                                <span class="checkmark">B5</span>
+                            </label>
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-6" type="checkbox">
+                                <span class="checkmark">B6</span>
+                            </label>
+                            <label class="cont"> 
+                                <input onclick="count(event)" id="2-7" type="checkbox">
+                                <span class="checkmark">B7</span>
+                            </label>       
+                        </div>
+
+                        <div class="row">
+                                <h1>Lane 3</h1>
+                                <hr style="width:100%">   
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-1" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>    
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-2" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-3" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-4" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="cont">  
+                                    <input onclick="count(event)" id="3-5" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-6" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="cont"> 
+                                    <input onclick="count(event)" id="3-7" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>       
+                            </div>
+
+                            <div class="row">
+                                    <h1>Lane 4</h1>
+                                    <hr style="width:100%">
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-1" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>    
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-2" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-3" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-4" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="cont">  
+                                        <input onclick="count(event)" id="4-5" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-6" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="cont"> 
+                                        <input onclick="count(event)" id="4-7" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>       
+                                </div>
+
+                                <div class="row">
+                                        <h1>Lane 5</h1>
+                                        <hr style="width:100%">
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-1" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>    
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-2" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-3" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-4" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="cont">  
+                                            <input onclick="count(event)" id="5-5" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-6" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="cont"> 
+                                            <input onclick="count(event)" id="5-7" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>       
+                                    </div>
+
+                                    <div class="row">
+                                            <h1>Lane 6</h1>
+                                            <hr style="width:100%">
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-1" type="checkbox">
+                                                <span class="checkmark">F1</span>
+                                            </label>    
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-2" type="checkbox">
+                                                <span class="checkmark">F2</span>
+                                            </label>
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-3" type="checkbox">
+                                                <span class="checkmark">F3</span>
+                                            </label>
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-4" type="checkbox">
+                                                <span class="checkmark">F4</span>
+                                            </label>
+                                            <label class="cont">  
+                                                <input onclick="count(event)" id="6-5" type="checkbox">
+                                                <span class="checkmark">F5</span>
+                                            </label>
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-6" type="checkbox">
+                                                <span class="checkmark">F6</span>
+                                            </label>
+                                            <label class="cont"> 
+                                                <input onclick="count(event)" id="6-7" type="checkbox">
+                                                <span class="checkmark">F7</span>
+                                            </label>       
+                                        </div>
+                                      
+                </form>
+            </div>
+
+
+            <div class="Pay">
+                <table id="pay-table">
+                    <tr id="pay-table-header">
+                        <td>Amount to Pay</td>
+                    </tr>
+                    <tr>
+                        <td class="pay-head"><p>Shops selected</p></td>
+                        <td>qwertyu</td>
+                    </tr>
+                    <tr>
+                        <td class="pay-head"><p>No. of shops selected</p></td>
+                        <td>qwertyu</td>
+                    </tr>
+                    <tr>
+                        <td class="pay-head"><p>Rate per shop</p></td>
+                        <td>qwertyuqwert</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: antiquewhite;"><p>Total amount</p></td>
+                        <td>qwertyu</td>
+                    </tr>
+                </table>
+            </div>
+
+</div>
+
+
+
+
+        </div>
+
+        <script>
+        var selected=0;
+
+        function count(event){
+         if((document.getElementById(event.target.id).checked)==true){
+             selected+=1;
+         }
+
+         else{
+             selected-=1;
+         }
+     
+         console.log(selected);
+         document.getElementById("shop-count").innerHTML=selected;
+        }
+             </script>
+
+    </body>
+</html>

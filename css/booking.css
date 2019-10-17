@@ -1,0 +1,156 @@
+header{
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 60px;
+}
+
+h1{
+    font-size: 20px;
+    width: 80%;
+    color:white;
+}
+
+.container{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+}
+/* .container-book{
+    width:100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden; 
+} */
+ .Seat{
+    position: relative;
+    margin-left:35%;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #76777a;
+    width: max-content;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    align-items: center;
+} 
+form{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.row{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont {
+    top: 5%;
+    left:10%;
+    display: block;
+    position: relative;
+    padding-left: 65px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;    
+}
+
+.cont:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .cont input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .cont input:checked ~ .checkmark:after {
+    
+  }
+  
+  .cont .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .Pay{
+      position: relative;
+      margin-bottom: 60px;
+  }
+  .Pay table{
+      border: 1.5px solid black;
+      border-radius: 10px;
+      width:60%;
+      margin-left: 20%;
+      margin-top:180px;
+  }
+
+  .Pay td{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-radius:10px;
+      padding: 16px;
+      background-color:
+    }
+  .Pay .pay-head{
+      background-color: #bfdbe3;
+      border-right:none;
+  }
+  #pay-table-header td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+  @media screen and (orientation: portrait){
+    .Seat{
+        margin-left:24%;
+    }
+    .Pay table{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .container-book{
+        flex-direction: column;
+    }
+  }

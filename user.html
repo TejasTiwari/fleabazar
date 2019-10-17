@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="stylesheet" href="css/user.css">
+        <link rel="stylesheet" href="index2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/user.js"></script>
+        <script src="js/index2.js"></script>
+
+    </head>        
+    
+    <body>
+        <div class="container">
+                <div id="top-left">
+                        <hr id="hr-left-1" style="width: 20vw;">
+                        <p>Enjoy hassle-free stall booking at the biggest flea markets of India with Fleaazar</p>
+                        <hr id="hr-left-2" style="width: 20vw; margin-top:0px;">
+                    </div>
+                    <div id="top-right">
+                        <hr id="hr-right-1" style="width: 20vw;">
+                        <p>Service covers fleamarkets in Delhi, Mumbai and Jaipur</p>
+                        <hr id="hr-right-2" style="width: 20vw; margin-top:20px;">
+                    </div>
+                    <div class="top-nav">
+                        <img id="logo" src="assets/img/logo.png">
+                        <ul class="navlist">           
+                            <a href="#about-content" style="text-decoration: none; color:black"><li id="about">About Us</li></a>        
+                            <li id="events">Events</li>
+                            <li id="contact">Contact Us</li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">My Account 
+                                    <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#" onclick="home()">Home</a>
+                                        <a href="#" onclick="trans()">Transactions</a>
+                                        <a href="#" onclick="profile()">Edit Profile</a>
+                                        <a href="#">Sign Out</a>
+                                    </div>
+                                </div> 
+                            </li>
+                        </ul>   
+                    </div>
+        
+                    <hr><hr>
+        
+
+        <!-- Transactions -->
+        <div id="transaction-cont">
+            <h1 style="text-align: center; margin-top:80px;">My Transactions</h1>
+            <table class="transaction">
+                <tr id="head">
+                    <td>Date</td>
+                    <td>Transaction ID</td>
+                    <td>Shop no</td>
+                    <td>Address</td>
+                    <td>Event Date</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>02/05/2000</td>
+                    <td>2473869</td>
+                    <td>21</td>
+                    <td>MG Road, Delhi</td>
+                    <td>21/09/2019</td>
+                    <td>Booked</td>
+                </tr>
+                <tr>
+                    <td>02/05/2000</td>
+                    <td>2473869</td>
+                    <td>21</td>
+                    <td>MG Road, Delhi</td>
+                    <td>21/09/2019</td>
+                    <td>Booked</td>
+                </tr>
+                <tr>
+                    <td>02/05/2000</td>
+                    <td>2473869</td>
+                    <td>21</td>
+                    <td>MG Road, Delhi</td>
+                    <td>21/09/2019</td>
+                    <td>Payment Pending</td>
+                </tr>
+                <tr>
+                    <td>02/05/2000</td>
+                    <td>2473869</td>
+                    <td>21</td>
+                    <td>MG Road, Delhi</td>
+                    <td>21/09/2019</td>
+                     <td>Booked</td>
+                </tr>
+                <tr>
+                    <td>02/05/2000</td>
+                    <td>2473869</td>
+                    <td>21</td>
+                    <td>MG Road, Delhi</td>
+                    <td>21/09/2019</td>
+                    <td>Cancelled</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="home">
+                <div class="mid-container">
+               
+
+                        <!-- <div class="line"></div> -->
+        
+                        <div class= "right-cont">
+                            <h1>Events</h1>
+                            <table id="events-table" class="info">
+                                <caption id="month">October</caption>
+
+                            </table>
+                        </div>
+        
+                        <div class="left-cont">
+                                <div class="home-slideshow" id="slider">
+                                        <a class="control_next">&#10095;</a>
+                                        <a class="control_prev">&#10094;</a>
+                                        <ul>
+                                          <li>
+                                            <img src="assets/img/back-img-1.jpg">
+                                          </li>
+                                          <li>
+                                            <img src="assets/img/back-img-2.jpg">
+                                          </li>
+                                          <li>
+                                            <img src="assets/img/back-img-1.jpg">
+                                          </li>
+                                        </ul>
+                                        
+                                      </div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <hr><hr>
+                    <div class="bottom-cont">
+                        <div id="about-content">
+                            <h1>About Us</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+        
+                        <div class="contact">
+                            <h1>Contact Us</h1>
+                            <p>Phone no. - 1234567890/ 1234567890<br> Email:- qwertyuiop@qwert.com   
+                            </p>
+                            <h3 style="text-align: center;">Or write to us</h3>
+                            <form id="contact-form" action="" method="post">
+                                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                                <fieldset>
+                                    <input placeholder="Your name" type="text" tabindex="1" required>
+                                </fieldset>
+                                <fieldset>
+                                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                                </fieldset>
+                                <fieldset>
+                                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                                </fieldset>
+                                <fieldset>
+                                    <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                                </fieldset>
+                                <fieldset>
+                                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                </fieldset>
+                            </form>
+                            </div>
+                    </div> 
+        </div>
+
+
+        <div id="profile">
+            <h1 style="text-align: center; margin-top:80px;">Welcome Username</h1>
+            <form id="profile-form">
+            <table class="profile">
+                <tr>
+                    <td id="head">NAME</td>
+                    <td><input id="prof-name" size="20"></td>
+                </tr>
+                <tr>
+                    <td id="head">Email ID</td>
+                    <td><input id="prof-email" size="20"></td>
+                </tr>
+                <tr>
+                    <td id="head">Phone No.</td>
+                    <td><input id="prof-phone" type="number" minlength="10" size=10</td>
+                </tr>
+                <tr>
+                    <td id="head">Address</td>
+                    <td><input id="prof-address" size="50"</td>
+                </tr>
+                <tr>
+                    <td id="head">Shop preferences</td>
+                    <td><input id="prof-shop" </td>
+                </tr>
+            </table>
+            </form>
+            <button>Submit</button>
+
+        </div>
+    </div>
+    </body>
+</html>

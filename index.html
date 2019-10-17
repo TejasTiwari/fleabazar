@@ -1,0 +1,250 @@
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="/home/codelord/fleabazar/css/home.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script type="text/javascript" src="/home/codelord/fleabazar/js/carousel.js"></script>
+		<script>
+			
+	
+
+		$(document).ready(function (){
+			   $("#notification-container").css("display", "none");
+    	});
+		
+		  $(document).ready(function(){
+			   $('#owl-carousel').owlCarousel({
+				  loop: true,
+				  margin: 50,
+				  responsiveClass: true,
+				  responsive: {
+					  0: {
+						  items: 1,
+						  nav: true
+					  },
+					  600: {
+						  items: 2,
+						  nav: false
+					  },
+					  768: {
+						  items: 3,
+						  nav: false
+					  },
+					  1000: {
+						  items: 3,
+						  nav: true,
+						  loop: true
+					  }
+				  }
+			  });
+		  });
+			  
+
+		  $(function() {
+
+$('#login-form-link').click(function(e) {
+	$("#login-form").delay(100).fadeIn(100);
+	 $("#register-form").fadeOut(100);
+	$('#register-form-link').removeClass('active');
+	$(this).addClass('active');
+	e.preventDefault();
+});
+$('#register-form-link').click(function(e) {
+	$("#register-form").delay(100).fadeIn(100);
+	 $("#login-form").fadeOut(100);
+	$('#login-form-link').removeClass('active');
+	$(this).addClass('active');
+	e.preventDefault();
+});
+
+});
+
+		  </script>
+
+		<script>
+			function myFunction() {
+				var x = document.getElementById("notification-container");
+				if (x.style.display === "none") {
+			 	 	x.style.display = "block";
+				}
+			    else {
+			  		x.style.display = "none";
+				}
+		  }
+		</script>
+	
+	</head>
+<body>
+	<nav>
+		<ul class="nav-list">
+			<li><button><a onclick="window.location='file:///home/codelord/fleabazar/login.html' " class="nav_left">Login/ Sign Up</a></button></li>
+			<li id="opt-1"><a href="#top">Home</a></li>		
+			<li id="opt-2"><a href="#slide-show">Gallery</a></li>
+			<li id="logo">Logo</li>
+		</ul>
+	</nav>
+
+	<ul class="notificationsbtn nav navbar-nav navbar-right">
+		<li id="notificationsli">
+			<a id="notifications" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>
+		  <span onclick="myFunction()" class="noty-manager-bubble" style="margin-left: -2px; top: 10px; opacity: 1;">3</span></a>
+
+			<div id="notification-container" class="dropdown-menu" role="menu" aria-labelledby="drop3">
+
+				<section class="panel">
+					<header class="panel-heading">
+						<strong>Notifications</strong>
+					</header>
+					<div id="notification-list" class="list-group list-group-alt">
+					  
+					  <div style=""><div class="noty-manager-list-item noty-manager-list-item-error"><div class="activity-item"> <i class="fa fa-shopping-cart text-success"></i> <div class="activity"> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div> </div></div></div>
+					  
+					  <div style=""><div class="noty-manager-list-item noty-manager-list-item-error"><div class="activity-item"> <i class="fa fa-shopping-cart text-success"></i> <div class="activity"> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div> </div></div></div>
+					  
+					  <div style=""><div class="noty-manager-list-item noty-manager-list-item-error"><div class="activity-item"> <i class="fa fa-shopping-cart text-success"></i> <div class="activity"> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div> </div></div></div>
+					  
+					  <div style=""><div class="noty-manager-list-item noty-manager-list-item-error"><div class="activity-item"> <i class="fa fa-shopping-cart text-success"></i> <div class="activity"> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div> </div></div></div>
+					  
+					  <div style=""><div class="noty-manager-list-item noty-manager-list-item-error"><div class="activity-item"> <i class="fa fa-shopping-cart text-success"></i> <div class="activity"> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div> </div></div></div>
+					  
+					</div>
+					<footer class="panel-footer">
+						<a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+						<a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+					</footer>
+				</section>
+
+			</div>
+		</li>
+	</ul>
+
+
+		<div class="object one">
+			<h1>FleaBazaar, one stop for both, the vendors as well as customers</h1>
+		</div>
+		<div class="content">
+			<p>Lorem Ipsum</p>
+		</div>
+
+		<div class="object two">
+			<h1></h1>
+		</div>
+		<!-- <div class="content">
+			<p>Lorem Ipsum</p> -->
+			<!-- slder sec -->
+			<section class="slider_sec" id="slide-show">
+				<div class="container-fluid fix-cont">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="slider_in">
+								
+								<h3 color="black">GALLERY</h3>
+								<div id="owl-carousel" class="owl-carousel owl-theme">
+									<div class="item">
+										<div class="img_wrp">
+											<div class="img_text">
+												<h5>What is Lorem Ipsum?</h5>
+												<p>
+													"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+											</div>
+											<img src="/home/codelord/fleabazar/assets/img/back-img-1.jpg" alt="">
+										</div>
+									</div>
+									 <div class="item">
+										<div class="img_wrp">
+											<div class="img_text">
+												<h5>What is Lorem Ipsum?</h5>
+												<p>
+												   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+											</div>
+											<img src="/home/codelord/fleabazar/assets/img/back-img-1.jpg" alt="">
+										</div>
+									</div>
+									 <div class="item">
+										<div class="img_wrp">
+											<div class="img_text">
+												<h5>What is Lorem Ipsum?</h5>
+												<p>
+												   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+											</div>
+											<img src="/home/codelord/fleabazar/assets/img/back-img-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="item">
+										<div class="img_wrp">
+											<div class="img_text">
+												<h5>What is Lorem Ipsum?</h5>
+												<p>
+												   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+											</div>
+											<img src="/home/codelord/fleabazar/assets/img/back-img-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="item">
+										<div class="img_wrp">
+											<div class="img_text">
+												<h5>What is Lorem Ipsum?</h5>
+												<p>
+												   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+											</div>
+											<img src="/home/codelord/fleabazar/assets/img/back-img-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+		
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- // slder sec -->
+		<!-- </div> -->
+
+		<div class="object three">
+			<h1></h1>
+		</div>
+		<div class="content">
+			<p>Lorem Ipsum</p>
+		</div>
+
+		<footer>
+			<span class="copyright">&copy; FleaBazaar 2019</span>
+
+
+		</footer>
+
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
